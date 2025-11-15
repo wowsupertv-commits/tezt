@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  footer {
+    background-color: #000;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    padding: 50px 20px 30px;
+  }
+
+  .footer-container {
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  /* === MOBILE: 2x4 GRID === */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .footer-col {
+    text-align: left;
+  }
+
+  .footer-col h4 {
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 6px;
+    font-size: 13px;
+  }
+
+  .footer-col ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-col ul li a:hover {
+    color: #fff;
+  }
+
+  /* Newsletter */
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .newsletter input {
+    padding: 8px;
+    border: none;
+    border-radius: 25px;
+    background: #111;
+    color: #fff;
+    font-size: 13px;
+  }
+
+  .newsletter button {
+    background: linear-gradient(90deg, #ffcc00, #ff0077);
+    border: none;
+    border-radius: 25px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000;
+    font-size: 13px;
+  }
+
+  .newsletter button:hover {
+    opacity: 0.9;
+  }
+
+  /* Social Icons */
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .social-icons a:hover {
+    color: #fff;
+  }
+
+  /* Footer Bottom */
+  .footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+  }
+
+  .footer-bottom a {
+    color: #aaa;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer-bottom a:hover {
+    color: #fff;
+  }
+
+  /* === DESKTOP: 1 ROW 8 COLUMNS === */
+  @media (min-width: 769px) {
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 25px;
+      align-items: start;
+    }
+
+    .footer-col h4 {
+      font-size: 16px;
+    }
+
+    .newsletter form {
+      flex-direction: row;
+    }
+
+    .newsletter input {
+      flex: 1;
+      border-radius: 25px 0 0 25px;
+    }
+
+    .newsletter button {
+      border-radius: 0 25px 25px 0;
+      padding: 10px 20px;
+    }
+  }
+</style>
+</head>
+
+<body>
+<footer>
+  <div class="footer-container">
+
+    <!-- Footer Grid -->
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <h4>Editorial Office</h4>
+        <ul>
+          <li>📍 Mangalore</li>
+          <li>📞 +91 8792170727</li>
+          <li>✉️ prajaparanews@gmail.com</li>
+        </ul>
+      </div>
+
+      
+
+      <div class="footer-col">
+        <h4>ENTERTAINMENT</h4>
+        <ul>
+          <li><a href="#">Filmy Talk</a></li>
+          <li><a href="#">Sports</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>NEWS</h4>
+        <ul>
+          <li><a href="#">State</a></li>
+          <li><a href="#">National</a></li>
+          <li><a href="#">Political</a></li>
+          <li><a href="#">Health</a></li>
+        </ul>
+      </div>
+
+      
+
+      <div class="footer-col">
+        <h4>Advertise</h4>
+        <ul>
+          <li><a href="#">Brand Promotion</a></li>
+          <li><a href="#">Video Ads</a></li>
+          <li><a href="#">Press Release</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://prajaparanews.com" target="_blank" class="fb">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://twitter.com/intent/tweet?url=https://prajaparanews.com&text=ಬೆಂಗಳೂರು ದೀಪಾವಳಿ ದಿನ ಟ್ರಾಫಿಕ್ ಸುಲಭಗೊಂಡಿತು" target="_blank" class="tw">
+    <i class="fab fa-x-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/?url=https://prajaparanews.com" target="_blank" class="ig">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.youtube.com/" target="_blank" class="yt">
+    <i class="fab fa-youtube"></i>
+  </a>
+</div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-col newsletter">
+        <h4>Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button>Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+<a href="#header" style="color:#ffff;text-decoration:none;">Back to top...</a>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>© 2025 Prajapara News. All rights reserved.| Design: DigiInfotech</div>
+      <div>
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Cookies</a> |
+        <a href="#">Legal</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
